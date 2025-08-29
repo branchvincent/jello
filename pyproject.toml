@@ -20,6 +20,9 @@ Homepage = "https://github.com/kellyjonbrazil/jello"
 [project.scripts]
 jello = "jello.cli:main"
 
+[tool.setuptools.data-files]
+"share/man/man1" = ["man/*.1"]
+
 [tool.setuptools.packages.find]
 include = ["jello*"]
 exclude = ["*tests*"]
